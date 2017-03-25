@@ -83,7 +83,7 @@ CookieManager manages cookies of UIWebView.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/koogawa/CookieManager.git", :commit => "8a8029b306178eca489b88318478273fd8651503" }
+  s.source       = { :git => "https://github.com/koogawa/CookieManager.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
