@@ -3,7 +3,7 @@
 //  Demo
 //
 //  Created by koogawa on 2017/03/25.
-//  Copyright © 2017年 koogawa. All rights reserved.
+//  Copyright © 2017 koogawa. All rights reserved.
 //
 
 import UIKit
