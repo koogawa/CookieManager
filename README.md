@@ -25,10 +25,14 @@ pod install
 
 ## Usage
 
-### Import
-
 ```swift
 import CookieManager
+```
+
+```swift
+let viewController = CookiesViewController()
+let naviController = UINavigationController(rootViewController: viewController)
+self.present(naviController, animated: true, completion: nil)
 ```
 
 ## Requirements
