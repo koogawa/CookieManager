@@ -14,6 +14,7 @@
 		210F457A1E8697EA00B7002A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210F45781E8697EA00B7002A /* LaunchScreen.storyboard */; };
 		210F45851E86988800B7002A /* CookiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210F45831E86988800B7002A /* CookiesViewController.swift */; };
 		210F45861E86988800B7002A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210F45841E86988800B7002A /* Info.plist */; };
+		210F45881E86AB7900B7002A /* CookieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210F45871E86AB7900B7002A /* CookieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		210F45821E86988800B7002A /* CookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookieManager.h; sourceTree = "<group>"; };
 		210F45831E86988800B7002A /* CookiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookiesViewController.swift; sourceTree = "<group>"; };
 		210F45841E86988800B7002A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		210F45871E86AB7900B7002A /* CookieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				210F45821E86988800B7002A /* CookieManager.h */,
+				210F45871E86AB7900B7002A /* CookieViewController.swift */,
 				210F45831E86988800B7002A /* CookiesViewController.swift */,
 				210F45841E86988800B7002A /* Info.plist */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				210F45721E8697EA00B7002A /* ViewController.swift in Sources */,
 				210F45701E8697EA00B7002A /* AppDelegate.swift in Sources */,
+				210F45881E86AB7900B7002A /* CookieViewController.swift in Sources */,
 				210F45851E86988800B7002A /* CookiesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

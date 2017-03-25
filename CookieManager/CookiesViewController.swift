@@ -38,6 +38,18 @@ public class CookiesViewController: UITableViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+    // MARK: - Table view delegate
+
+    override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cookies = HTTPCookieStorage.shared.cookies else {
+            return
+        }
+
+        let cookieViewController = CookieViewController()
+        cookieViewController.cookie = cookies[indexPath.row]
+        self.navigationController?.pushViewController(cookieViewController, animated: true)
+    }
+
     // MARK: - Table view data source
 
     override public func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,6 +68,7 @@ public class CookiesViewController: UITableViewController {
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         if cell == nil {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: identifier)
+            cell?.accessoryType = .disclosureIndicator
         }
 
         // Configure the cell...
@@ -69,6 +82,7 @@ public class CookiesViewController: UITableViewController {
     }
 
     // Override to support editing the table view.
+
     override public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         guard let cookies = HTTPCookieStorage.shared.cookies else {
             return
